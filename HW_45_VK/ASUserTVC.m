@@ -51,8 +51,10 @@ static NSString* identifierWallLink       = @"ASWallTextLink";
     [super viewDidLoad];
     
     //self.currentUser = [[ASUser alloc] init];
+    
     self.arrrayWall  = [NSMutableArray array];
     [self getUserFromServer];
+   
     //[self getWallFromServer];
 
 }
@@ -65,6 +67,7 @@ static NSString* identifierWallLink       = @"ASWallTextLink";
 
 
 
+
 #pragma mark - Get Friends From Server
 
 -(void)  getUserFromServer {
@@ -72,23 +75,20 @@ static NSString* identifierWallLink       = @"ASWallTextLink";
   [[ASServerManager sharedManager] getUsersInfoUserID:self.userID onSuccess:^(ASUser *user) {
       self.currentUser = user;
     
+      
       [[ASServerManager sharedManager] getCityInfoByID:self.currentUser.cityID onSuccess:^(NSString *city) {
-          
       self.currentUser.city = city;
-          
       } onFailure:^(NSError *error)     { }];
       
       
       
       [[ASServerManager sharedManager] getCounteresInfoByID:self.currentUser.countryID onSuccess:^(NSString *country) {
-          
-          self.currentUser.country = country;
-          [self.tableView reloadData];
-          
+      self.currentUser.country = country;
+      [self.tableView reloadData];
       } onFailure:^(NSError *error) {  }];
       
       
-      [self.currentUser superDescripton];
+      //[self.currentUser superDescripton];
       
   } onFailure:^(NSError *error, NSInteger statusCode) {
       NSLog(@"errpr = %@ statsus %d",[error localizedDescription],statusCode);

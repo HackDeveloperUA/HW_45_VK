@@ -47,11 +47,7 @@
             self.mainPhotoURL = [NSURL URLWithString:urlString];
         }
     }
-    
-    
-    
-    
-    
+ 
     return self;
 }
 

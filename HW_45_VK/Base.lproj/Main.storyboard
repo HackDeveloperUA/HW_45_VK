@@ -73,7 +73,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="luP-Sc-XS6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1800" y="500"/>
+            <point key="canvasLocation" x="1853" y="1521"/>
         </scene>
         <!--Follower SubscriptionTVC-->
         <scene sceneID="YBP-YJ-bM4">
@@ -142,7 +142,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ol1-cj-Pmf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1800" y="1177"/>
+            <point key="canvasLocation" x="1082" y="1188"/>
         </scene>
         <!--UserTVC-->
         <scene sceneID="IXo-3L-jhi">
@@ -357,12 +357,12 @@
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdu-U6-edK">
                                             <rect key="frame" x="8" y="64" width="585" height="49"/>
-                                            <string key="text">Российские разработчики приложений для iOS и OS X получили от Apple уведомление о том, что они больше не смогут получать выплаты на свои счета из-за санкций.</string>
+                                            <string key="text">Use the properties and methods defined in this class to set the title, message, and delegate of an alert view and configure the buttons.</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="spanshop" translatesAutoresizingMaskIntoConstraints="NO" id="EUQ-tI-H9c">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="snapshop" translatesAutoresizingMaskIntoConstraints="NO" id="EUQ-tI-H9c">
                                             <rect key="frame" x="8" y="111" width="584" height="179"/>
                                         </imageView>
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="STZ-3x-FXs">
@@ -539,7 +539,7 @@
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wmi-TZ-WQG">
                                             <rect key="frame" x="8" y="64" width="580" height="57"/>
-                                            <string key="text">Российские разработчики приложений для iOS и OS X получили от Apple уведомление о том, что они больше не смогут получать выплаты на свои счета из-за санкций.</string>
+                                            <string key="text">Use the properties and methods defined in this class to set the title, message, and delegate of an alert view and configure the buttons.</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -732,7 +732,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gg3-hN-ZWF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2459" y="700"/>
+            <point key="canvasLocation" x="1858" y="640"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YhE-yl-sBG">
@@ -756,9 +756,9 @@
     <resources>
         <image name="comment" width="256" height="256"/>
         <image name="like" width="334" height="289"/>
-        <image name="regan" width="640" height="724"/>
+        <image name="regan" width="24" height="24"/>
         <image name="repost" width="283" height="259"/>
+        <image name="snapshop" width="593" height="334"/>
         <image name="snapshop2" width="46" height="46"/>
-        <image name="spanshop" width="387" height="219"/>
     </resources>
 </document>

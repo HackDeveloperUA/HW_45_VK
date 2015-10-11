@@ -22,6 +22,7 @@
 
 @property (strong, nonatomic) NSMutableArray* arrayFriends;
 @property (assign, nonatomic) BOOL loadingData;
+
 @end
 
 
@@ -53,6 +54,8 @@
                                                 
              if ([friends count] > 0) {
             
+                 NSLog(@"подгружаю");
+
                  [self.arrayFriends addObjectsFromArray:friends];
 
                  NSMutableArray* newPaths = [NSMutableArray array];
@@ -73,7 +76,8 @@
                 [self.tableView beginUpdates];
                 [self.tableView insertRowsAtIndexPaths:newPaths withRowAnimation:UITableViewRowAnimationTop];
                 [self.tableView endUpdates];
-                self.loadingData = NO;
+
+                 self.loadingData = NO;
              }
                                                     
         }
@@ -92,6 +96,7 @@
     if ((scrollView.contentOffset.y + scrollView.frame.size.height) >= scrollView.contentSize.height) {
         if (!self.loadingData)
         {
+            NSLog(@"scrollViewDidScroll");
             self.loadingData = YES;
             [self getFriendsFromServer];
         }
